@@ -450,9 +450,9 @@ class FINER:
         return monitor_metric, monitor_mode
 
     def train(self):
-
-        train_dataset = datasets.load_dataset(path='nlpaueb/finer-139', split='train')
-        # train_dataset = train_dataset.select(range(10000))
+        #Reducing training size
+        #train_dataset = datasets.load_dataset(path='nlpaueb/finer-139', split='train')
+        train_dataset = train_dataset.select(range(50000))
         train_generator = DataLoader(
             dataset=train_dataset,
             vectorize_fn=self.vectorize,
@@ -460,9 +460,9 @@ class FINER:
             max_length=self.train_params['max_length'],
             shuffle=True
         )
-
-        validation_dataset = datasets.load_dataset(path='nlpaueb/finer-139', split='validation')
-        # validation_dataset = validation_dataset.select(range(10000))
+        #Reducing validation size
+        #validation_dataset = datasets.load_dataset(path='nlpaueb/finer-139', split='validation')
+        validation_dataset = validation_dataset.select(range(50000))
         validation_generator = DataLoader(
             dataset=validation_dataset,
             vectorize_fn=self.vectorize,
