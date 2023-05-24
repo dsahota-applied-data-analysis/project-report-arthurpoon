@@ -7,7 +7,7 @@ This README.md file
 
 2) Ki Kwong Arthur Poon_ADA Final Project.pdf: PDF of report
 
-3) Ki_Kwong_Arthur_Poon_bert_num_shape.ipynb: Google Colab Notebook (Colab does not have line count, so I do not have lines of count for my produced file) <https://colab.research.google.com/drive/1T94gu2-PhPRnNLSm7tiTxDvRNRc0fHZy?usp=sharing>
+3) Ki_Kwong_Arthur_Poon_bert_num_shape.ipynb: Google Colab Notebook (Colab does not have line count, so I do not have lines of count for my produced file) <https://colab.research.google.com/drive/1T94gu2-PhPRnNLSm7tiTxDvRNRc0fHZy?usp=sharing>. The colab notebook runtime was not saved down because I was using my personal g-suite account because I had bought compute units to accelerate the computation. Thus, in order for it to be shareable with uchicago credentials by default, I hosted the file on my uchicago g-suite account which does not contain my results output run using the accelerated resources.
 
 4) Cloned directory from Loukas et al. **NOTE THIS CODE WAS NOT WRITTEN BY ME, BUT BY LOUKAS et al.
 /finer-main/finer-main
