@@ -451,7 +451,7 @@ class FINER:
 
     def train(self):
         #Reducing training size
-        #train_dataset = datasets.load_dataset(path='nlpaueb/finer-139', split='train')
+        train_dataset = datasets.load_dataset(path='nlpaueb/finer-139', split='train')
         train_dataset = train_dataset.select(range(50000))
         train_generator = DataLoader(
             dataset=train_dataset,
@@ -461,7 +461,7 @@ class FINER:
             shuffle=True
         )
         #Reducing validation size
-        #validation_dataset = datasets.load_dataset(path='nlpaueb/finer-139', split='validation')
+        validation_dataset = datasets.load_dataset(path='nlpaueb/finer-139', split='validation')
         validation_dataset = validation_dataset.select(range(50000))
         validation_generator = DataLoader(
             dataset=validation_dataset,
