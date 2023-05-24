@@ -16,6 +16,7 @@ README for this directory can be found within
 finer-main/finer-main/README.md
 
 Modifications relative to original repository:
+
 finer.py: 
 - modified lines 282:289 to include structure to randomly deploy shape or numeric tokens when replacing numeric values
 - added lines 455 and 465 to decrease the training and validation sets to expedite training time of program
