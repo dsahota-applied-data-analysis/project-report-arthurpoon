@@ -583,9 +583,9 @@ class FINER:
             validation_data=validation_generator,
             callbacks=callbacks,
             epochs=self.general_params['epochs'],
-            #workers=self.general_params['workers'],
-            #max_queue_size=self.general_params['max_queue_size'],
-            #use_multiprocessing=self.general_params['use_multiprocessing']
+            workers=self.general_params['workers'],
+            max_queue_size=self.general_params['max_queue_size'],
+            use_multiprocessing=self.general_params['use_multiprocessing']
         )
 
         print("Completed training")
