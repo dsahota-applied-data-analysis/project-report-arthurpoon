@@ -6,7 +6,7 @@ import re
 import datasets
 import numpy as np
 import tensorflow as tf
-#import wandb
+import wandb
 
 from copy import deepcopy
 from tqdm import tqdm
@@ -15,7 +15,7 @@ from seqeval.metrics import classification_report
 from seqeval.scheme import IOB2
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from transformers import BertTokenizer, AutoTokenizer
-#from wandb.keras import WandbCallback
+from wandb.keras import WandbCallback
 
 from configurations import Configuration
 from data import DATA_DIR, VECTORS_DIR
